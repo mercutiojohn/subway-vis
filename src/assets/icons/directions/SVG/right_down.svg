@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_2" data-name="图层 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.22 46.22">
+  <defs>
+    <style>
+      .directions-fill-color {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="_图层_1-2" data-name="图层 1">
+    <polygon class="directions-fill-color" points="0 34.07 10.01 44.08 46.22 46.22 44.08 10.01 34.08 0 36.18 29.33 9.56 2.71 2.71 9.56 29.33 36.18 0 34.07"/>
+  </g>
+</svg>

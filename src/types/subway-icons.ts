@@ -1,4 +1,4 @@
-export enum ArrowsAndDirections {
+export enum ArrowDirections {
   LEFT = "left",
   RIGHT = "right",
   UP = "up",
@@ -10,180 +10,186 @@ export enum ArrowsAndDirections {
   LEFT_TURN = "left_turn",
   RIGHT_TURN = "right_turn",
   LEFT_BACK = "left_back",
-  RIGHT_BACK = "right_back",
-  NO_ENTRY = "no_entry",
-  GATE_ENTER = "gate_enter",
-  GATE_FORBIDDEN = "gate_forbidden",
-  FORBIDDEN = "forbidden",
-  // 暗色
-  NEXT_STATION_A = "next_station_a",
-  NEXT_STATION_B = "next_station_b",
-  LEFT_DARK = "left_dark",
-  RIGHT_DARK = "right_dark",
-  UP_DARK = "up_dark",
-  DOWN_DARK = "down_dark",
-  LEFT_UP_DARK = "left_up_dark",
-  RIGHT_UP_DARK = "right_up_dark",
-  LEFT_DOWN_DARK = "left_down_dark",
-  RIGHT_DOWN_DARK = "right_down_dark",
-  LEFT_TURN_DARK = "left_turn_dark",
-  RIGHT_TURN_DARK = "right_turn_dark",
-  LEFT_BACK_DARK = "left_back_dark",
-  RIGHT_BACK_DARK = "right_back_dark",
-  NO_ENTRY_DARK = "no_entry_dark",
-  GATE_ENTER_DARK = "gate_enter_dark",
-  GATE_FORBIDDEN_DARK = "gate_forbidden_dark",
-  FORBIDDEN_DARK = "forbidden_dark",
-  // 特殊
-  GATE_ENTER_SPECIAL = "gate_enter_special",
-  GATE_FORBIDDEN_SPECIAL = "gate_forbidden_special",
-  // 出口
-  EXIT_A = "exit_a",
-  EXIT_B = "exit_b",
-  EXIT_SMALL = "exit_small",
-  EXIT_SPECIAL_A = "exit_special_a",
-  EXIT_SPECIAL_B = "exit_special_b",
-  EXIT_SPECIAL_C = "exit_special_c",
-  EXIT_EMERGENCY = "exit_emergency",
+  RIGHT_BACK = "right_back"
 }
 
-export const arrowsAndDirectionsMap: Record<ArrowsAndDirections, string> = {
-  [ArrowsAndDirections.LEFT]: "左",
-  [ArrowsAndDirections.RIGHT]: "右",
-  [ArrowsAndDirections.UP]: "上",
-  [ArrowsAndDirections.DOWN]: "下",
-  [ArrowsAndDirections.LEFT_UP]: "左上",
-  [ArrowsAndDirections.RIGHT_UP]: "右上",
-  [ArrowsAndDirections.LEFT_DOWN]: "左下",
-  [ArrowsAndDirections.RIGHT_DOWN]: "右下",
-  [ArrowsAndDirections.LEFT_TURN]: "左掉头",
-  [ArrowsAndDirections.RIGHT_TURN]: "右掉头",
-  [ArrowsAndDirections.LEFT_BACK]: "左后方",
-  [ArrowsAndDirections.RIGHT_BACK]: "右后方",
-  [ArrowsAndDirections.NO_ENTRY]: "禁止通行",
-  [ArrowsAndDirections.GATE_ENTER]: "闸机 进入",
-  [ArrowsAndDirections.GATE_FORBIDDEN]: "闸机 禁止",
-  [ArrowsAndDirections.FORBIDDEN]: "禁止",
-  // 暗色
-  [ArrowsAndDirections.NEXT_STATION_A]: "下一站 A 暗",
-  [ArrowsAndDirections.NEXT_STATION_B]: "下一站 B 暗",
-  [ArrowsAndDirections.LEFT_DARK]: "左 暗",
-  [ArrowsAndDirections.RIGHT_DARK]: "右 暗",
-  [ArrowsAndDirections.UP_DARK]: "上 暗",
-  [ArrowsAndDirections.DOWN_DARK]: "下 暗",
-  [ArrowsAndDirections.LEFT_UP_DARK]: "左上 暗",
-  [ArrowsAndDirections.RIGHT_UP_DARK]: "右上 暗",
-  [ArrowsAndDirections.LEFT_DOWN_DARK]: "左下 暗",
-  [ArrowsAndDirections.RIGHT_DOWN_DARK]: "右下 暗",
-  [ArrowsAndDirections.LEFT_TURN_DARK]: "左掉头 暗",
-  [ArrowsAndDirections.RIGHT_TURN_DARK]: "右掉头 暗",
-  [ArrowsAndDirections.LEFT_BACK_DARK]: "左后方 暗",
-  [ArrowsAndDirections.RIGHT_BACK_DARK]: "右后方 暗",
-  [ArrowsAndDirections.NO_ENTRY_DARK]: "禁止通行 暗",
-  [ArrowsAndDirections.GATE_ENTER_DARK]: "闸机 进入 暗",
-  [ArrowsAndDirections.GATE_FORBIDDEN_DARK]: "闸机 禁止 暗",
-  [ArrowsAndDirections.FORBIDDEN_DARK]: "禁止 暗",
-  // 特殊
-  [ArrowsAndDirections.GATE_ENTER_SPECIAL]: "闸机 进入 特殊",
-  [ArrowsAndDirections.GATE_FORBIDDEN_SPECIAL]: "闸机 禁止 特殊",
+export const arrowDirectionsMap: Record<ArrowDirections, string> = {
+  [ArrowDirections.LEFT]: "左",
+  [ArrowDirections.RIGHT]: "右",
+  [ArrowDirections.UP]: "上",
+  [ArrowDirections.DOWN]: "下",
+  [ArrowDirections.LEFT_UP]: "左上",
+  [ArrowDirections.RIGHT_UP]: "右上",
+  [ArrowDirections.LEFT_DOWN]: "左下",
+  [ArrowDirections.RIGHT_DOWN]: "右下",
+  [ArrowDirections.LEFT_TURN]: "左掉头",
+  [ArrowDirections.RIGHT_TURN]: "右掉头",
+  [ArrowDirections.LEFT_BACK]: "左后方",
+  [ArrowDirections.RIGHT_BACK]: "右后方",
+}
+
+export enum ExitIcons {
   // 出口
-  [ArrowsAndDirections.EXIT_A]: "出口 A",
-  [ArrowsAndDirections.EXIT_B]: "出口 B",
-  [ArrowsAndDirections.EXIT_SMALL]: "出口 小",
-  [ArrowsAndDirections.EXIT_SPECIAL_A]: "出口 特殊 A",
-  [ArrowsAndDirections.EXIT_SPECIAL_B]: "出口 特殊 B",
-  [ArrowsAndDirections.EXIT_SPECIAL_C]: "出口 特殊 C",
-  [ArrowsAndDirections.EXIT_EMERGENCY]: "紧急出口",
+  EXIT_ONE_CHARACTER = "exit_one_character",
+  EXIT_ONE_CHARACTER_ZH = "exit_one_character_zh",
+  EXIT_ONE_CHARACTER_EN = "exit_one_character_en",
+  EXIT_TWO_CHARACTERS = "exit_two_characters",
+  // EXIT_TWO_CHARACTERS_ZH = "exit_two_characters_zh",
+  // EXIT_TWO_CHARACTERS_EN = "exit_two_characters_en",
+  // EXIT_SPECIAL_A = "exit_special_a",
+  // EXIT_SPECIAL_B = "exit_special_b",
+  // EXIT_SPECIAL_C = "exit_special_c",
+  // EXIT_EMERGENCY = "exit_emergency",
+}
+
+export const exitIconsMap: Record<ExitIcons, string> = {
+  // 出口
+  [ExitIcons.EXIT_ONE_CHARACTER]: "出口 单字符",
+  [ExitIcons.EXIT_ONE_CHARACTER_ZH]: "出口 单字符 中文",
+  [ExitIcons.EXIT_ONE_CHARACTER_EN]: "出口 单字符 英文",
+  [ExitIcons.EXIT_TWO_CHARACTERS]: "出口 双字符",
+  // [ExitIcons.EXIT_TWO_CHARACTERS_ZH]: "出口 双字符 中文",
+  // [ExitIcons.EXIT_TWO_CHARACTERS_EN]: "出口 双字符 英文",
+  // [ExitIcons.EXIT_SPECIAL_A]: "出口 特殊 A",
+  // [ExitIcons.EXIT_SPECIAL_B]: "出口 特殊 B",
+  // [ExitIcons.EXIT_SPECIAL_C]: "出口 特殊 C",
+  // [ExitIcons.EXIT_EMERGENCY]: "紧急出口",
 };
+
+export enum SpecialIcons {
+  // 禁止通行
+  NO_ENTRY = "no_entry",
+  // 闸机
+  GATE_ENTER = "gate_enter",
+  GATE_FORBIDDEN = "gate_forbidden",
+}
+
+export const specialIconsMap: Record<SpecialIcons, string> = {
+  // 禁止通行
+  [SpecialIcons.NO_ENTRY]: "禁止通行",
+  // 闸机
+  [SpecialIcons.GATE_ENTER]: "闸机 进入",
+  [SpecialIcons.GATE_FORBIDDEN]: "闸机 禁止",
+}
 
 export enum FacilityAndServices {
   // 扶梯和楼梯
-  ESCALATOR_LEFT_BLUE = "escalator_left_blue",
-  STAIRS_LEFT_BLUE = "stairs_left_blue",
-  ESCALATOR_RIGHT_WHITE = "escalator_right_white",
-  STAIRS_RIGHT_WHITE = "stairs_right_white",
+  ESCALATOR_TO_LEFT_BLUE = "escalator_to_left_blue",
+  STAIRS_TO_LEFT_BLUE = "stairs_to_left_blue",
+  ESCALATOR_TO_RIGHT = "escalator_to_right",
+  ESCALATOR_TO_RIGHT_BORDER = "escalator_to_right_border",
+  STAIRS_TO_RIGHT = "stairs_to_right",
+  STAIRS_TO_RIGHT_BORDER = "stairs_to_right_border",
   
   // 卫生间
-  TOILET = "toilet",
-  TOILET_ACCESSIBLE = "toilet_accessible",
-  TOILET_MEN = "toilet_men",
-  TOILET_WOMEN = "toilet_women",
-  TOILET_THIRD = "toilet_third",
+  TOILET_COLORED = "toilet_colored",
+  TOILET_ACCESSIBLE_COLORED = "toilet_accessible_colored",
+  TOILET_MALE_BLUE = "toilet_male_blue",
+  TOILET_FEMALE_COLORED = "toilet_female_colored",
   
   // 电梯
-  ELEVATOR = "elevator",
-  ELEVATOR_ACCESSIBLE = "elevator_accessible",
+  ELEVATOR_BLUE = "elevator_blue",
+  ELEVATOR_ACCESSIBLE_BLUE = "elevator_accessible_blue",
   
   // 无障碍设施
   ACCESSIBLE_BLUE = "accessible_blue",
-  ACCESSIBLE_WHITE = "accessible_white",
+  ACCESSIBLE = "accessible",
+  ACCESSIBLE_BORDER = "accessible_border",
   ACCESSIBLE_RAMP = "accessible_ramp",
-  ACCESSIBLE_PLATFORM = "accessible_platform",
-  GUIDE_DOG = "guide_dog",
+  ACCESSIBLE_RAMP_BORDER = "accessible_ramp_border",
+  ACCESSIBLE_ESCALATOR = "accessible_escalator",
+  ACCESSIBLE_ESCALATOR_BORDER = "accessible_escalator_border",
+  GUIDE_DOG_BLUE = "guide_dog_blue",
   
   // 特殊人群
   ELDERLY = "elderly",
+  ELDERLY_BORDER = "elderly_border",
   BABY_CARRIAGE = "baby_carriage",
   PREGNANT = "pregnant",
-  LUGGAGE = "luggage",
+  PREGNANT_BORDER = "pregnant_border",
+  WITH_LUGGAGE = "with_luggage",
+  WITH_LUGGAGE_BORDER = "with_luggage_border",
   
   // 服务设施
-  BABY_CARE = "baby_care",
-  AED = "aed",
+  BABY_CARE_BLUE = "baby_care_blue",
+  // AED_COLORED = "aed_colored",
   TICKET_MACHINE = "ticket_machine",
+  TICKET_MACHINE_BORDER = "ticket_machine_border",  
   TICKET_OFFICE = "ticket_office",
-  INFORMATION = "information",
+  TICKET_OFFICE_BORDER = "ticket_office_border",
+  INQUIRY = "inquiry",
+  INQUIRY_BORDER = "inquiry_border",
   SERVICE_CENTER = "service_center",
+  SERVICE_CENTER_BORDER = "service_center_border",
   SECURITY_OFFICE = "security_office",
+  SECURITY_OFFICE_BORDER = "security_office_border",
   
   // 安全设施
   EMERGENCY_BUTTON = "emergency_button",
+  EMERGENCY_BUTTON_BORDER = "emergency_button_border",
   SECURITY_CHECK_PASSENGER = "security_check_passenger",
-  SECURITY_CHECK_LUGGAGE = "security_check_luggage"
+  SECURITY_CHECK_PASSENGER_BORDER = "security_check_passenger_border",
+  SECURITY_CHECK_LUGGAGE = "security_check_luggage",
+  SECURITY_CHECK_LUGGAGE_BORDER = "security_check_luggage_border"
 }
 
 export const facilityAndServicesMap: Record<FacilityAndServices, string> = {
   // 扶梯和楼梯
-  [FacilityAndServices.ESCALATOR_LEFT_BLUE]: "左向蓝扶梯",
-  [FacilityAndServices.STAIRS_LEFT_BLUE]: "左向蓝楼梯",
-  [FacilityAndServices.ESCALATOR_RIGHT_WHITE]: "右向白扶梯",
-  [FacilityAndServices.STAIRS_RIGHT_WHITE]: "右向白楼梯",
+  [FacilityAndServices.ESCALATOR_TO_LEFT_BLUE]: "左向蓝扶梯",
+  [FacilityAndServices.STAIRS_TO_LEFT_BLUE]: "左向蓝楼梯",
+  [FacilityAndServices.ESCALATOR_TO_RIGHT]: "右向扶梯",
+  [FacilityAndServices.ESCALATOR_TO_RIGHT_BORDER]: "右向扶梯 边框",
+  [FacilityAndServices.STAIRS_TO_RIGHT]: "右向楼梯",
+  [FacilityAndServices.STAIRS_TO_RIGHT_BORDER]: "右向楼梯 边框",
   
   // 卫生间
-  [FacilityAndServices.TOILET]: "卫生间",
-  [FacilityAndServices.TOILET_ACCESSIBLE]: "无障碍卫生间",
-  [FacilityAndServices.TOILET_MEN]: "男卫生间",
-  [FacilityAndServices.TOILET_WOMEN]: "女卫生间",
-  [FacilityAndServices.TOILET_THIRD]: "第三卫生间",
+  [FacilityAndServices.TOILET_COLORED]: "卫生间 彩色",
+  [FacilityAndServices.TOILET_ACCESSIBLE_COLORED]: "无障碍卫生间 彩色",
+  [FacilityAndServices.TOILET_MALE_BLUE]: "男卫生间 蓝色",
+  [FacilityAndServices.TOILET_FEMALE_COLORED]: "女卫生间 彩色",
   
   // 电梯
-  [FacilityAndServices.ELEVATOR]: "直梯",
-  [FacilityAndServices.ELEVATOR_ACCESSIBLE]: "无障碍直梯",
+  [FacilityAndServices.ELEVATOR_BLUE]: "直梯 蓝色",
+  [FacilityAndServices.ELEVATOR_ACCESSIBLE_BLUE]: "无障碍直梯 蓝色",
   
   // 无障碍设施
   [FacilityAndServices.ACCESSIBLE_BLUE]: "无障碍蓝色",
-  [FacilityAndServices.ACCESSIBLE_WHITE]: "无障碍白色",
+  [FacilityAndServices.ACCESSIBLE_BORDER]: "无障碍边框",
   [FacilityAndServices.ACCESSIBLE_RAMP]: "无障碍坡道",
-  [FacilityAndServices.ACCESSIBLE_PLATFORM]: "无障碍平台",
-  [FacilityAndServices.GUIDE_DOG]: "欢迎导盲犬",
+  [FacilityAndServices.ACCESSIBLE_RAMP_BORDER]: "无障碍坡道 边框",
+  [FacilityAndServices.ACCESSIBLE_ESCALATOR]: "无障碍扶梯",
+  [FacilityAndServices.ACCESSIBLE_ESCALATOR_BORDER]: "无障碍扶梯 边框",
+  [FacilityAndServices.GUIDE_DOG_BLUE]: "欢迎导盲犬 蓝色",
   
   // 特殊人群
   [FacilityAndServices.ELDERLY]: "老年人",
   [FacilityAndServices.BABY_CARRIAGE]: "携带婴儿车",
   [FacilityAndServices.PREGNANT]: "孕妇",
-  [FacilityAndServices.LUGGAGE]: "携带行李",
+  [FacilityAndServices.PREGNANT_BORDER]: "孕妇 边框",
+  [FacilityAndServices.WITH_LUGGAGE]: "携带行李",
+  [FacilityAndServices.WITH_LUGGAGE_BORDER]: "携带行李 边框",
   
   // 服务设施
-  [FacilityAndServices.BABY_CARE]: "母婴室",
-  [FacilityAndServices.AED]: "AED",
+  [FacilityAndServices.BABY_CARE_BLUE]: "母婴室 蓝色",
+  // [FacilityAndServices.AED]: "AED",
   [FacilityAndServices.TICKET_MACHINE]: "自助售票",
+  [FacilityAndServices.TICKET_MACHINE_BORDER]: "自助售票 边框",
   [FacilityAndServices.TICKET_OFFICE]: "售票 / 补票",
-  [FacilityAndServices.INFORMATION]: "问讯",
+  [FacilityAndServices.TICKET_OFFICE_BORDER]: "售票 / 补票 边框",
+  [FacilityAndServices.INQUIRY]: "问讯",
+  [FacilityAndServices.INQUIRY_BORDER]: "问讯 边框",
   [FacilityAndServices.SERVICE_CENTER]: "客服中心",
   [FacilityAndServices.SECURITY_OFFICE]: "警卫室",
   
   // 安全设施
   [FacilityAndServices.EMERGENCY_BUTTON]: "招援按钮",
+  [FacilityAndServices.EMERGENCY_BUTTON_BORDER]: "招援按钮 边框",
   [FacilityAndServices.SECURITY_CHECK_PASSENGER]: "乘客安检",
-  [FacilityAndServices.SECURITY_CHECK_LUGGAGE]: "物品安检"
+  [FacilityAndServices.SECURITY_CHECK_PASSENGER_BORDER]: "乘客安检 边框",
+  [FacilityAndServices.SECURITY_CHECK_LUGGAGE]: "物品安检",
+  [FacilityAndServices.SECURITY_CHECK_LUGGAGE_BORDER]: "物品安检 边框",
+  [FacilityAndServices.ACCESSIBLE]: "无障碍",
+  [FacilityAndServices.ELDERLY_BORDER]: "老年人 边框",
+  [FacilityAndServices.SERVICE_CENTER_BORDER]: "客服中心 边框",
+  [FacilityAndServices.SECURITY_OFFICE_BORDER]: "警卫室 边框"
 };

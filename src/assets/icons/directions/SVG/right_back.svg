@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_2" data-name="图层 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.02 56.69">
+  <defs>
+    <style>
+      .directions-fill-color {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="_图层_1-2" data-name="图层 1">
+    <path class="directions-fill-color" d="M51.02,26.03v12.26l-.04.03-18.83,18.37-18.87-18.4v-12.26l14.16,13.81v-21.43c0-4.96-4.04-9.01-9.02-9.01H0V0h18.42c10.16,0,18.43,8.26,18.43,18.41v21.43l14.17-13.81Z"/>
+  </g>
+</svg>
