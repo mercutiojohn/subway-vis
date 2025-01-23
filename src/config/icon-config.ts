@@ -1,5 +1,5 @@
 import type { IconGridProps } from '@/components/IconGrid'
-import { ArrowDirections, arrowDirectionsMap, ExitIcons, exitIconsMap, SpecialIcons, specialIconsMap } from "@/types/subway-icons"
+import { ArrowDirections, arrowDirectionsMap, ExitIcons, exitIconsMap, SpecialIcons, specialIconsMap, FacilityAndServicesIcons, facilityAndServicesIconsMap } from "@/types/subway-icons"
 
 export const iconGridConfigs: IconGridProps[] = [
   {
@@ -28,5 +28,13 @@ export const iconGridConfigs: IconGridProps[] = [
     icons: Object.values(ExitIcons),
     iconMap: exitIconsMap,
     basePath: "/exit"
+  },
+  {
+    title: "设施图标",
+    icons: Object.values(FacilityAndServicesIcons),
+    iconMap: facilityAndServicesIconsMap,
+    basePath: "/facility",
+    iconClassName: "[&_.directions-fill-color]:fill-[#081e30]",
+    iconBgClassName: "bg-[#081e30] text-white"
   }
 ] 

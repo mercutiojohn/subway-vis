@@ -2,13 +2,13 @@
 <svg id="_图层_2" data-name="图层 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.19 56.69">
   <defs>
     <style>
-      .cls-1 {
+      .gate-enter {
         fill: #009f3c;
         stroke-width: 0px;
       }
     </style>
   </defs>
   <g id="_图层_1-2" data-name="图层 1">
-    <polygon class="cls-1" points="0 15.42 0 29.57 24.09 56.69 48.19 29.57 48.19 15.42 28.94 37.65 28.94 0 19.26 0 19.26 37.65 0 15.42"/>
+    <polygon class="gate-enter" points="0 15.42 0 29.57 24.09 56.69 48.19 29.57 48.19 15.42 28.94 37.65 28.94 0 19.26 0 19.26 37.65 0 15.42"/>
   </g>
 </svg>

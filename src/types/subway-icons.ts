@@ -72,7 +72,7 @@ export const specialIconsMap: Record<SpecialIcons, string> = {
   [SpecialIcons.GATE_FORBIDDEN]: "闸机 禁止",
 }
 
-export enum FacilityAndServices {
+export enum FacilityAndServicesIcons {
   // 扶梯和楼梯
   ESCALATOR_TO_LEFT_BLUE = "escalator_to_left_blue",
   STAIRS_TO_LEFT_BLUE = "stairs_to_left_blue",
@@ -92,8 +92,8 @@ export enum FacilityAndServices {
   ELEVATOR_ACCESSIBLE_BLUE = "elevator_accessible_blue",
   
   // 无障碍设施
-  ACCESSIBLE_BLUE = "accessible_blue",
   ACCESSIBLE = "accessible",
+  ACCESSIBLE_BLUE = "accessible_blue",
   ACCESSIBLE_BORDER = "accessible_border",
   ACCESSIBLE_RAMP = "accessible_ramp",
   ACCESSIBLE_RAMP_BORDER = "accessible_ramp_border",
@@ -133,63 +133,63 @@ export enum FacilityAndServices {
   SECURITY_CHECK_LUGGAGE_BORDER = "security_check_luggage_border"
 }
 
-export const facilityAndServicesMap: Record<FacilityAndServices, string> = {
+export const facilityAndServicesIconsMap: Record<FacilityAndServicesIcons, string> = {
   // 扶梯和楼梯
-  [FacilityAndServices.ESCALATOR_TO_LEFT_BLUE]: "左向蓝扶梯",
-  [FacilityAndServices.STAIRS_TO_LEFT_BLUE]: "左向蓝楼梯",
-  [FacilityAndServices.ESCALATOR_TO_RIGHT]: "右向扶梯",
-  [FacilityAndServices.ESCALATOR_TO_RIGHT_BORDER]: "右向扶梯 边框",
-  [FacilityAndServices.STAIRS_TO_RIGHT]: "右向楼梯",
-  [FacilityAndServices.STAIRS_TO_RIGHT_BORDER]: "右向楼梯 边框",
+  [FacilityAndServicesIcons.ESCALATOR_TO_LEFT_BLUE]: "左向蓝扶梯",
+  [FacilityAndServicesIcons.STAIRS_TO_LEFT_BLUE]: "左向蓝楼梯",
+  [FacilityAndServicesIcons.ESCALATOR_TO_RIGHT]: "右向扶梯",
+  [FacilityAndServicesIcons.ESCALATOR_TO_RIGHT_BORDER]: "右向扶梯 边框",
+  [FacilityAndServicesIcons.STAIRS_TO_RIGHT]: "右向楼梯",
+  [FacilityAndServicesIcons.STAIRS_TO_RIGHT_BORDER]: "右向楼梯 边框",
   
   // 卫生间
-  [FacilityAndServices.TOILET_COLORED]: "卫生间 彩色",
-  [FacilityAndServices.TOILET_ACCESSIBLE_COLORED]: "无障碍卫生间 彩色",
-  [FacilityAndServices.TOILET_MALE_BLUE]: "男卫生间 蓝色",
-  [FacilityAndServices.TOILET_FEMALE_COLORED]: "女卫生间 彩色",
+  [FacilityAndServicesIcons.TOILET_COLORED]: "卫生间 彩色",
+  [FacilityAndServicesIcons.TOILET_ACCESSIBLE_COLORED]: "无障碍卫生间 彩色",
+  [FacilityAndServicesIcons.TOILET_MALE_BLUE]: "男卫生间 蓝色",
+  [FacilityAndServicesIcons.TOILET_FEMALE_COLORED]: "女卫生间 彩色",
   
   // 电梯
-  [FacilityAndServices.ELEVATOR_BLUE]: "直梯 蓝色",
-  [FacilityAndServices.ELEVATOR_ACCESSIBLE_BLUE]: "无障碍直梯 蓝色",
+  [FacilityAndServicesIcons.ELEVATOR_BLUE]: "直梯 蓝色",
+  [FacilityAndServicesIcons.ELEVATOR_ACCESSIBLE_BLUE]: "无障碍直梯 蓝色",
   
   // 无障碍设施
-  [FacilityAndServices.ACCESSIBLE_BLUE]: "无障碍蓝色",
-  [FacilityAndServices.ACCESSIBLE_BORDER]: "无障碍边框",
-  [FacilityAndServices.ACCESSIBLE_RAMP]: "无障碍坡道",
-  [FacilityAndServices.ACCESSIBLE_RAMP_BORDER]: "无障碍坡道 边框",
-  [FacilityAndServices.ACCESSIBLE_ESCALATOR]: "无障碍扶梯",
-  [FacilityAndServices.ACCESSIBLE_ESCALATOR_BORDER]: "无障碍扶梯 边框",
-  [FacilityAndServices.GUIDE_DOG_BLUE]: "欢迎导盲犬 蓝色",
+  [FacilityAndServicesIcons.ACCESSIBLE]: "无障碍",
+  [FacilityAndServicesIcons.ACCESSIBLE_BLUE]: "无障碍蓝色",
+  [FacilityAndServicesIcons.ACCESSIBLE_BORDER]: "无障碍边框",
+  [FacilityAndServicesIcons.ACCESSIBLE_RAMP]: "无障碍坡道",
+  [FacilityAndServicesIcons.ACCESSIBLE_RAMP_BORDER]: "无障碍坡道 边框",
+  [FacilityAndServicesIcons.ACCESSIBLE_ESCALATOR]: "无障碍扶梯",
+  [FacilityAndServicesIcons.ACCESSIBLE_ESCALATOR_BORDER]: "无障碍扶梯 边框",
+  [FacilityAndServicesIcons.GUIDE_DOG_BLUE]: "欢迎导盲犬 蓝色",
   
   // 特殊人群
-  [FacilityAndServices.ELDERLY]: "老年人",
-  [FacilityAndServices.BABY_CARRIAGE]: "携带婴儿车",
-  [FacilityAndServices.PREGNANT]: "孕妇",
-  [FacilityAndServices.PREGNANT_BORDER]: "孕妇 边框",
-  [FacilityAndServices.WITH_LUGGAGE]: "携带行李",
-  [FacilityAndServices.WITH_LUGGAGE_BORDER]: "携带行李 边框",
+  [FacilityAndServicesIcons.ELDERLY]: "老年人",
+  [FacilityAndServicesIcons.ELDERLY_BORDER]: "老年人 边框",
+  [FacilityAndServicesIcons.BABY_CARRIAGE]: "携带婴儿车",
+  [FacilityAndServicesIcons.PREGNANT]: "孕妇",
+  [FacilityAndServicesIcons.PREGNANT_BORDER]: "孕妇 边框",
+  [FacilityAndServicesIcons.WITH_LUGGAGE]: "携带行李",
+  [FacilityAndServicesIcons.WITH_LUGGAGE_BORDER]: "携带行李 边框",
   
   // 服务设施
-  [FacilityAndServices.BABY_CARE_BLUE]: "母婴室 蓝色",
+  [FacilityAndServicesIcons.BABY_CARE_BLUE]: "母婴室 蓝色",
   // [FacilityAndServices.AED]: "AED",
-  [FacilityAndServices.TICKET_MACHINE]: "自助售票",
-  [FacilityAndServices.TICKET_MACHINE_BORDER]: "自助售票 边框",
-  [FacilityAndServices.TICKET_OFFICE]: "售票 / 补票",
-  [FacilityAndServices.TICKET_OFFICE_BORDER]: "售票 / 补票 边框",
-  [FacilityAndServices.INQUIRY]: "问讯",
-  [FacilityAndServices.INQUIRY_BORDER]: "问讯 边框",
-  [FacilityAndServices.SERVICE_CENTER]: "客服中心",
-  [FacilityAndServices.SECURITY_OFFICE]: "警卫室",
+  [FacilityAndServicesIcons.TICKET_MACHINE]: "自助售票",
+  [FacilityAndServicesIcons.TICKET_MACHINE_BORDER]: "自助售票 边框",
+  [FacilityAndServicesIcons.TICKET_OFFICE]: "售票 / 补票",
+  [FacilityAndServicesIcons.TICKET_OFFICE_BORDER]: "售票 / 补票 边框",
+  [FacilityAndServicesIcons.INQUIRY]: "问讯",
+  [FacilityAndServicesIcons.INQUIRY_BORDER]: "问讯 边框",
+  [FacilityAndServicesIcons.SERVICE_CENTER]: "客服中心",
+  [FacilityAndServicesIcons.SECURITY_OFFICE]: "警卫室",
   
   // 安全设施
-  [FacilityAndServices.EMERGENCY_BUTTON]: "招援按钮",
-  [FacilityAndServices.EMERGENCY_BUTTON_BORDER]: "招援按钮 边框",
-  [FacilityAndServices.SECURITY_CHECK_PASSENGER]: "乘客安检",
-  [FacilityAndServices.SECURITY_CHECK_PASSENGER_BORDER]: "乘客安检 边框",
-  [FacilityAndServices.SECURITY_CHECK_LUGGAGE]: "物品安检",
-  [FacilityAndServices.SECURITY_CHECK_LUGGAGE_BORDER]: "物品安检 边框",
-  [FacilityAndServices.ACCESSIBLE]: "无障碍",
-  [FacilityAndServices.ELDERLY_BORDER]: "老年人 边框",
-  [FacilityAndServices.SERVICE_CENTER_BORDER]: "客服中心 边框",
-  [FacilityAndServices.SECURITY_OFFICE_BORDER]: "警卫室 边框"
+  [FacilityAndServicesIcons.EMERGENCY_BUTTON]: "招援按钮",
+  [FacilityAndServicesIcons.EMERGENCY_BUTTON_BORDER]: "招援按钮 边框",
+  [FacilityAndServicesIcons.SECURITY_CHECK_PASSENGER]: "乘客安检",
+  [FacilityAndServicesIcons.SECURITY_CHECK_PASSENGER_BORDER]: "乘客安检 边框",
+  [FacilityAndServicesIcons.SECURITY_CHECK_LUGGAGE]: "物品安检",
+  [FacilityAndServicesIcons.SECURITY_CHECK_LUGGAGE_BORDER]: "物品安检 边框",
+  [FacilityAndServicesIcons.SERVICE_CENTER_BORDER]: "客服中心 边框",
+  [FacilityAndServicesIcons.SECURITY_OFFICE_BORDER]: "警卫室 边框"
 };
